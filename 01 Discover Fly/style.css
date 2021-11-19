@@ -109,14 +109,62 @@ nav ul li a:hover, a.active{
 .btn-style{
     display: block;
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0;
+    border-radius: 12px;
     border: none;
     color: #fff;
     font-weight: 500;
-    background-color:  #3352F2;
+    background: hsl(340deg 100% 32%);
+    cursor: pointer;
 }
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .btn-style:active .front {
+    transform: translateY(-2px);
+  }
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+.quantity{
+    background-color: #D4ECDD;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+  
+}
+
+.sucessful{
+    display: none;
+}
+
+.sucessful > h1{
+    color: #21f051;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 25px;
+}
+
+.sucessful > p{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: whitesmoke
+}
+
+#first-purchased, #economy-purchased, #total-purchased{
+    color: tomato;
 }
